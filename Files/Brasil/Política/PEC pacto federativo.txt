@@ -1,15 +1,3 @@
-PEC do Pacto Federativo
-(PEC 188/19)	O texto prevê, entre outros pontos: (i) a descentralização de recursos do pré-sal; (ii) a criação de um Conselho Fiscal da República que se reunirá a cada três meses para avaliar situação financeira dos estados; e (iii) a criação do Estado de Emergência Fiscal que desindexa despesas obrigatórias e cria mecanismos automáticos de redução de gastos. A estimativa da equipe econômica é de que até R$ 400 bilhões em recursos sejam destinados a estados e municípios nos próximos 15 anos.
-
-
-Oq ficou:
-i) Redução de subsídios em 5 anos (2pp)
-ii) Extinção dos fundos públicos 
-iii) Gatilhos - impacto em 2022 é de 5 bilhões.
-
-Oq saiu:
-i) Redução de 25% das jornadas e salários dos servidores.
-ii) Desvinculação da saúde e educação.
-iii) Desindexação
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ffc760b82c4821770563e7eec5994c5dafbc0ec3c400cd1cc9ea0af95426108
+size 839
