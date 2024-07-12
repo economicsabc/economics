@@ -1,0 +1,632 @@
+Blanch REG2.xls loaded from K:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\Blanch REG2.xls
+
+
+Algebra code for Blanch REG2.xls:
+p16 = 100*exp(LEMBI3-.16*"Baa Spread");
+Ptheta16 = p16*"Baa Spread"*.16;
+LEX = 100*log(EXCHANGERATE);
+
+Algebra code for Blanch REG2.xls:
+lexn = LEX-68.4712;
+DLEX = diff(LEX,1);
+DSELIC = diff(SELIC,1);
+DFFED = diff(FFED,1);
+DPtheta16 = diff(Ptheta16,1);
+diff = SELIC-FFED;
+Ddiff = diff(diff,1);
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+---- PcGive 10.40 session started at  7:55:33 on 31-03-2005 ----
+
+EQ( 1) Modelling LEX by OLS-CS (using Blanch REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              48.2459      6.266     7.70   0.000   0.5055
+Ptheta16              16.3035      2.501     6.52   0.000   0.4229
+
+sigma                 18.8108  RSS                 20522.974
+R^2                  0.422853  F(1,58) =     42.49 [0.000]**
+log-likelihood       -260.185  DW                     0.0413
+no. of observations        60  no. of parameters           2
+mean(LEX)             85.9002  var(LEX)              592.656
+
+EQ( 2) Modelling LEX by OLS-CS (using Blanch REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              135.405      6.961     19.5   0.000   0.8691
+SELIC               -0.595788     0.2862    -2.08   0.042   0.0707
+FFED                 -10.6008     0.7441    -14.2   0.000   0.7807
+
+sigma                 11.6949  RSS                7795.86624
+R^2                  0.780765  F(2,57) =     101.5 [0.000]**
+log-likelihood       -231.146  DW                      0.338
+no. of observations        60  no. of parameters           3
+mean(LEX)             85.9002  var(LEX)              592.656
+
+EQ( 3) Modelling LEX by OLS-CS (using Blanch REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              64.7181      9.104     7.11   0.000   0.4656
+diff                  1.24642     0.5049     2.47   0.017   0.0951
+
+sigma                 23.5543  RSS                32178.5852
+R^2                 0.0950734  F(1,58) =      6.094 [0.017]*
+log-likelihood       -273.678  DW                     0.0984
+no. of observations        60  no. of parameters           2
+mean(LEX)             85.9002  var(LEX)              592.656
+
+
+EQ( 4) Modelling LEX by OLS-CS (using Blanch REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              38.0137      8.361     4.55   0.000   0.2662
+diff                 0.730380     0.4045     1.81   0.076   0.0541
+Ptheta16              15.3595      2.509     6.12   0.000   0.3967
+
+sigma                 18.4546  RSS                19412.5223
+R^2                  0.454081  F(2,57) =     23.71 [0.000]**
+log-likelihood       -258.516  DW                     0.0495
+no. of observations        60  no. of parameters           3
+mean(LEX)             85.9002  var(LEX)              592.656
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-03-2005
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (Blanch REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1               -0.0351488     0.1668   -0.211   0.834
+LEX_1                0.882219    0.03519     25.1   0.000
+Constant              1.91374      2.590    0.739   0.463
+Ptheta16              3.78174     0.8837     4.28   0.000
+
+log-likelihood    -188.922546
+no. of observations        60  no. of parameters           5
+AIC.T              387.845093  AIC                6.46408488
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                  5.6393  sigma^2               31.8017
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+    -0.019730      0.87669       2.0455       3.9302
+
+	
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+    0.0065627      0.20503     0.049978    0.0076638    -0.027950    -0.020223
+     -0.25895      0.13554     -0.14781    -0.036343     0.060811   -0.0019147
+     0.014974     0.086236    -0.050959      0.19858    -0.026165     0.052809
+    -0.030543    -0.083154    -0.026493    -0.052710    -0.078843    -0.065981
+Partial autocorrelation function (PACF):
+    0.0065627      0.20500     0.049651    -0.035992    -0.050752    -0.018146
+     -0.25369      0.16176    -0.052052    -0.074873     0.099028     0.016457
+    -0.029753     0.030715     0.013253      0.11716    -0.023953     0.046038
+    -0.079894     -0.10188     0.040676    -0.047140     0.018011     -0.10642
+Portmanteau(24):  Chi^2(23)=   16.990 [0.8098]  
+
+Normality test for residuals
+Observations              60
+Mean             6.7256e-005
+Std.Devn.             5.6393
+Skewness            -0.79929
+Excess Kurtosis       2.0592
+Minimum              -19.816
+Maximum               13.930
+Asymptotic test:  Chi^2(2) =   16.990 [0.0002]**
+Normality test:   Chi^2(2) =   9.2491 [0.0098]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.29391     0.1298
+RSS = 224020  sigma = 64.409
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,54)  =   5.1269 [0.0276]* 
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (Blanch REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.854692    0.08143     10.5   0.000
+Constant              124.197      12.15     10.2   0.000
+SELIC               -0.491259     0.3883    -1.27   0.211
+FFED                 -7.97043      2.138    -3.73   0.000
+
+log-likelihood    -196.191328
+no. of observations        60  no. of parameters           5
+AIC.T              402.382656  AIC                 6.7063776
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 6.29648  sigma^2               39.6457
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.81686       135.41     -0.59579      -10.601
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+     0.014143      0.23445     0.084972    -0.021295    -0.027217    -0.041852
+     -0.27119     0.089824     -0.17743    -0.090019     0.032966    -0.075990
+    -0.010999     0.048073    -0.096782      0.11951    -0.052616    0.0063522
+    -0.030296    -0.059032     0.033927     0.076642     0.052583     0.042279
+Partial autocorrelation function (PACF):
+     0.014143      0.23429     0.083732    -0.081477    -0.071902    -0.026969
+     -0.25770      0.12438    -0.056499     -0.11265     0.063160    -0.026662
+    -0.054011    0.0061800    -0.041442     0.036025    -0.049935     0.011608
+    -0.096259    -0.057870     0.089771     0.065325     0.099036    -0.058422
+Portmanteau(24):  Chi^2(23)=   16.795 [0.8192]  
+
+Normality test for residuals
+Observations              60
+Mean                -0.11997
+Std.Devn.             6.2953
+Skewness              1.2596
+Excess Kurtosis       5.3640
+Minimum              -14.870
+Maximum               26.782
+Asymptotic test:  Chi^2(2) =   87.796 [0.0000]**
+Normality test:   Chi^2(2) =   22.023 [0.0000]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.12306     0.1351
+RSS = 673670  sigma = 111.693
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,54)  =  0.83027 [0.3662]  
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (Blanch REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.958928    0.02860     33.5   0.000
+Constant              96.9590      17.43     5.56   0.000
+diff                -0.483923     0.4280    -1.13   0.263
+
+log-likelihood    -198.018843
+no. of observations        60  no. of parameters           4
+AIC.T              404.037685  AIC                6.73396142
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 6.42615  sigma^2               41.2955
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.92515       64.718       1.2464
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+    -0.021309      0.27499     0.073067     0.019715   -0.0083361    0.0047945
+     -0.24491      0.16771     -0.12857    -0.013159     0.077875     0.030547
+     0.050358      0.12521    -0.056094      0.17810  -0.00025308    0.0017512
+    -0.040618    -0.061256   -0.0017103    0.0025709    -0.038733    -0.052781
+Partial autocorrelation function (PACF):
+    -0.021309      0.27466     0.089997    -0.056011    -0.059386    0.0062141
+     -0.24549      0.17934     0.014940    -0.083415     0.098157     0.077026
+   -0.0085444     0.047898    0.0029290     0.070495     0.013752   -0.0078390
+    -0.097738    -0.057677     0.091763    0.0077845     0.021752     -0.11305
+Portmanteau(24):  Chi^2(23)=   17.982 [0.7585]  
+
+Normality test for residuals
+Observations              60
+Mean                 0.22059
+Std.Devn.             6.4224
+Skewness              1.0450
+Excess Kurtosis       4.5367
+Minimum              -16.432
+Maximum               26.265
+Asymptotic test:  Chi^2(2) =   62.374 [0.0000]**
+Normality test:   Chi^2(2) =   21.555 [0.0000]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.20036     0.1321
+RSS = 653717  sigma = 109.022
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,55)  =   2.3000 [0.1351]  
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (Blanch REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.989375    0.01231     80.4   0.000
+Constant              71.0194      20.22     3.51   0.001
+diff                -0.307142     0.2211    -1.39   0.170
+Ptheta16              12.2649     0.9393     13.1   0.000
+
+log-likelihood     -158.37656
+no. of observations        60  no. of parameters           5
+AIC.T               326.75312  AIC                5.44588533
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 3.28227  sigma^2               10.7733
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.90881       38.014      0.73038       15.359
+
+Results saved to K:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\Res blanch Reg2.out
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+      0.15715      0.20971     0.090518    -0.025666     -0.18172     -0.13320
+     -0.16663    -0.043253      0.11333     0.090710    -0.053544      0.17697
+    -0.071785    0.0053491    -0.054304     0.053113    -0.028066      0.14615
+      0.15995    -0.059234      0.24700    -0.076424    -0.058497    -0.021136
+Partial autocorrelation function (PACF):
+      0.15715      0.18970     0.036165    -0.086341     -0.20703    -0.079913
+    -0.063995     0.061981      0.18783     0.053736     -0.20350     0.086621
+     -0.10279     0.044363     0.021817      0.11862   -0.0053418     0.078243
+      0.13437     -0.17881      0.23620     -0.16848     0.025227     0.015023
+Portmanteau(24):  Chi^2(23)=   26.100 [0.2962]  
+
+Normality test for residuals
+Observations              60
+Mean                 0.63479
+Std.Devn.             3.2203
+Skewness            -0.52635
+Excess Kurtosis       1.8147
+Minimum              -11.317
+Maximum               7.9095
+Asymptotic test:  Chi^2(2) =   11.003 [0.0041]**
+Normality test:   Chi^2(2) =   9.6890 [0.0079]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1   0.0072426     0.1364
+RSS = 22935.2  sigma = 20.6089
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,54)  =0.0028207 [0.9578]  
+
+Algebra code for Blanch REG2.xls:
+p10 = 100*exp(LEMBI3-.1*"Baa Spread");
+ptheta10 = .1*p10*"Baa Spread";
+Dptheta10 = diff(ptheta10,1);
+
+
+Algebra code for Blanch REG2.xls:
+p05 = 100*exp(LEMBI3-0.05*"Baa Spread");
+ptheta05 = p05*.05*"Baa Spread";
+Dptheta05 = diff(ptheta05,1);
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (Blanch REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.987682    0.01375     71.9   0.000
+Constant              73.7699      19.09     3.87   0.000
+diff                -0.309939     0.2273    -1.36   0.178
+ptheta05              26.0268      2.072     12.6   0.000
+
+log-likelihood    -159.980063
+no. of observations        60  no. of parameters           5
+AIC.T              329.960126  AIC                5.49933543
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                  3.3753  sigma^2               11.3927
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.90612       40.563      0.74627       33.076
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+      0.15365      0.19712     0.099712    -0.080292     -0.17413    -0.074323
+     -0.15569     0.011093      0.11368     0.092646    -0.039119      0.15705
+    -0.059584    -0.031054    -0.062730     0.051352    -0.065980      0.16938
+      0.16119    -0.047458      0.25939    -0.071871    -0.076058   -0.0017681
+Partial autocorrelation function (PACF):
+      0.15365      0.17771     0.050238     -0.14154     -0.18941    0.0015800
+    -0.061564     0.083795      0.13660     0.040372     -0.16884     0.097570
+    -0.041334   -0.0043419    -0.038018      0.13162    -0.046649      0.12180
+      0.15824     -0.17272      0.22834     -0.18412     0.028071    0.0022862
+Portmanteau(24):  Chi^2(23)=   25.844 [0.3083]  
+
+Normality test for residuals
+Observations              60
+Mean                 0.57446
+Std.Devn.             3.3261
+Skewness            -0.48653
+Excess Kurtosis       2.1121
+Minimum              -11.880
+Maximum               8.5200
+Asymptotic test:  Chi^2(2) =   13.520 [0.0012]**
+Normality test:   Chi^2(2) =   12.305 [0.0021]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.01067     0.1363
+RSS = 28592.4  sigma = 23.0106
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,54)  =0.0061275 [0.9379]  
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (Blanch REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.988517    0.01305     75.8   0.000
+Constant              72.5542      19.59     3.70   0.000
+diff                -0.308739     0.2240    -1.38   0.174
+ptheta10              15.7086      1.225     12.8   0.000
+
+log-likelihood    -159.128761
+no. of observations        60  no. of parameters           5
+AIC.T              328.257522  AIC                5.47095871
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 3.32582  sigma^2               11.0611
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.90728       39.407      0.73838       19.830
+
+Results saved to K:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\Res blanch Reg2.out
+
+AZ REG2.xls loaded from K:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\AZ REG2.xls
+
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+---- PcGive 10.40 session started at 10:12:21 on 31-03-2005 ----
+
+Algebra code for AZ REG2.xls:
+"P16 JPM BBB" = 100*exp("LEMBI JPM"-.16*"BBB HY Spd BB");
+"PTHETA16 JPM BBB" = "P16 JPM BBB"*.16*"BBB HY Spd BB";
+"DPTHETA16 JPM BBB" = diff("PTHETA16 JPM BBB",1);
+
+EQ( 1) Modelling LEX by OLS-CS (using AZ REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              41.5925      8.962     4.64   0.000   0.2743
+diff                 0.767242     0.4359     1.76   0.084   0.0516
+PTHETA16 JPM BBB      11.9906      2.407     4.98   0.000   0.3033
+
+sigma                 19.8326  RSS                22419.9889
+R^2                  0.369505  F(2,57) =      16.7 [0.000]**
+log-likelihood       -262.837  DW                      0.113
+no. of observations        60  no. of parameters           3
+mean(LEX)             85.9002  var(LEX)              592.656
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-03-2005
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (AZ REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                -0.304671     0.1259    -2.42   0.019
+LEX_1                0.975153    0.02989     32.6   0.000
+Constant              4.49225      2.270     1.98   0.053
+diff                -0.366375     0.1050    -3.49   0.001
+PTHETA16 JPM BBB      1.69732     0.6278     2.70   0.009
+
+log-likelihood     -189.37414
+no. of observations        60  no. of parameters           6
+AIC.T              390.748281  AIC                6.51247134
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 5.67735  sigma^2               32.2323
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+     -0.27851      0.95286       5.5177     -0.33975       1.8717
+
+
+Algebra code for AZ REG2.xls:
+"P10 JPM BBB" = 100*exp("LEMBI JPM"-.10*"BBB HY Spd BB");
+"PTHETA10 JPM BBB" = "P10 JPM BBB"*.10*"BBB HY Spd BB";
+"DPTHETA10 JPM BBB" = diff("PTHETA10 JPM BBB",1);
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+---- PcGive 10.40 session started at 10:24:35 on 31-03-2005 ----
+
+EQ( 1) Modelling DLEX by OLS-CS (using AZ REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              4.18026      2.717     1.54   0.129   0.0399
+diff                -0.382449     0.1351    -2.83   0.006   0.1233
+PTHETA10 JPM BBB      1.43756     0.8412     1.71   0.093   0.0487
+
+sigma                 6.19265  RSS                2185.88738
+R^2                  0.142457  F(2,57) =      4.735 [0.013]*
+log-likelihood       -192.999  DW                       2.56
+no. of observations        60  no. of parameters           3
+mean(DLEX)           0.604345  var(DLEX)             42.4836
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-03-2005
+
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (AZ REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                -0.299565     0.1262    -2.37   0.021
+LEX_1                0.973765    0.03076     31.7   0.000
+Constant              5.01213      2.271     2.21   0.032
+diff                -0.351599     0.1061    -3.31   0.002
+PTHETA10 JPM BBB      1.85603     0.7228     2.57   0.013
+
+log-likelihood    -189.678551
+no. of observations        60  no. of parameters           6
+AIC.T              391.357102  AIC                6.52261837
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 5.70639  sigma^2               32.5629
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+     -0.27369      0.95148       6.0807     -0.32358       2.0460
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+     0.033894      0.10122     0.024077    -0.072371    -0.081026     -0.11642
+     -0.31251     0.069454     -0.14785    -0.056044      0.11831     0.070803
+     0.090637      0.12356    -0.022244      0.17126     0.011954    -0.036149
+     -0.10818     -0.13143    -0.039263    0.0029649   -0.0018388     0.017895
+Partial autocorrelation function (PACF):
+     0.033894      0.10018     0.017793    -0.084724    -0.082143    -0.098670
+     -0.29737      0.10374     -0.11378    -0.085228     0.097690     0.042882
+    0.0047677     0.025309   -0.0022647     0.096115     0.031386     0.028465
+     -0.11661    -0.076006     0.060801     0.030984     0.088503    -0.031183
+Portmanteau(24):  Chi^2(23)=   19.699 [0.6600]  
+
+Normality test for residuals
+Observations              60
+Mean                0.035514
+Std.Devn.             5.7063
+Skewness             0.28097
+Excess Kurtosis       1.2034
+Minimum              -13.481
+Maximum               17.543
+Asymptotic test:  Chi^2(2) =   4.4098 [0.1103]  
+Normality test:   Chi^2(2) =   6.7116 [0.0349]* 
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.53259     0.1163
+RSS = 145591  sigma = 52.4118
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,53)  =   20.979 [0.0000]**
+
+EQ( 1) Modelling LEX by OLS-CS (using AZ REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              38.1383      8.757     4.36   0.000   0.2497
+diff                 0.663238     0.4217     1.57   0.121   0.0416
+Ptheta16 JPM BB       13.1848      2.348     5.62   0.000   0.3562
+
+sigma                 19.0638  RSS                20715.4239
+R^2                  0.417441  F(2,57) =     20.42 [0.000]**
+log-likelihood       -260.465  DW                      0.121
+no. of observations        60  no. of parameters           3
+mean(LEX)             85.9002  var(LEX)              592.656
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-03-2005
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (AZ REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                -0.311461     0.1259    -2.47   0.017
+LEX_1                0.966775    0.03045     31.8   0.000
+Constant              4.40120      2.237     1.97   0.054
+diff                -0.370552     0.1035    -3.58   0.001
+Ptheta16 JPM BB       1.91494     0.6489     2.95   0.005
+
+log-likelihood     -188.77989
+no. of observations        60  no. of parameters           6
+AIC.T              389.559781  AIC                6.49266301
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                 5.62119  sigma^2               31.5977
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+     -0.28270      0.94273       5.4047     -0.34353       2.1400
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 24:
+     0.036340      0.10645     0.039183    -0.057335    -0.072487     -0.12148
+     -0.32183     0.060274     -0.15749    -0.064161      0.11469     0.068260
+     0.090659      0.12534    -0.021449      0.17146    0.0082144    -0.027168
+     -0.10089     -0.12733    -0.039556   0.00037702   -0.0083688    0.0092547
+Partial autocorrelation function (PACF):
+     0.036340      0.10527     0.032296    -0.071705    -0.077550     -0.10716
+     -0.30602      0.10175     -0.11120    -0.078137      0.10505     0.045579
+    0.0023987     0.021096    -0.012011     0.084442     0.020423     0.036648
+     -0.11320    -0.077211     0.057577     0.030427     0.089342    -0.034808
+Portmanteau(24):  Chi^2(23)=   19.953 [0.6448]  
+
+Normality test for residuals
+Observations              60
+Mean                0.037199
+Std.Devn.             5.6211
+Skewness             0.18456
+Excess Kurtosis       1.0213
+Minimum              -13.843
+Maximum               16.711
+Asymptotic test:  Chi^2(2) =   2.9482 [0.2290]  
+Normality test:   Chi^2(2) =   5.6935 [0.0580]  
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.55179     0.1144
+RSS = 125188  sigma = 48.6007
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,53)  =   23.246 [0.0000]**
+
+EQ( 1) Modelling LEX by OLS-CS (using AZ REG2.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              41.3697      7.986     5.18   0.000   0.3201
+diff                 0.704136     0.4013     1.75   0.085   0.0513
+Ptheta 10 JPM BB      14.4478      2.304     6.27   0.000   0.4082
+
+sigma                 18.2785  RSS                19043.8818
+R^2                  0.464448  F(2,57) =     24.72 [0.000]**
+log-likelihood       -257.941  DW                      0.144
+no. of observations        60  no. of parameters           3
+mean(LEX)             85.9002  var(LEX)              592.656
+
+Algebra code for AZ REG2.xls:
+"DPtheta 10 JPM BB" = diff("Ptheta 10 JPM BB",1);
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-03-2005
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEX  (AZ REG2.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                -0.303233     0.1264    -2.40   0.020
+LEX_1                0.962627    0.03221     29.9   0.000
+Constant              5.37126      2.242     2.40   0.020
+diff                -0.352404     0.1050    -3.36   0.001
+Ptheta 10 JPM BB      1.94150     0.7023     2.76   0.008
+
+log-likelihood    -189.221753
+no. of observations        60  no. of parameters           6
+AIC.T              390.443505  AIC                6.50739175
+mean(LEX)             85.9002  var(LEX)              592.656
+sigma                   5.663  sigma^2               32.0696
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+     -0.27449      0.93809       6.4698     -0.32326       2.1779
+
+			  Agora são as regressões até hoje:
+
+			  

@@ -1,0 +1,57 @@
+
+EQ(21) Modelling DLEX by OLS (using Blanch REG2 NOM.xls)
+       The estimation sample is: 1999 (3) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+DLEX_1             0.00257894    0.08500   0.0303   0.976   0.0000
+DPtheta16             12.6666      1.167     10.9   0.000   0.6980
+Ddiff               -0.290836     0.2430    -1.20   0.237   0.0273
+Constant       U     0.632038     0.4785     1.32   0.192   0.0331
+DBaa Spread    U     -2.40838      3.863   -0.623   0.536   0.0076
+DBaa Spread_1  U      3.00712      3.425    0.878   0.384   0.0149
+DFFED          U    -0.655664      3.219   -0.204   0.839   0.0008
+DFFED_1        U     -2.27527      3.127   -0.728   0.470   0.0103
+
+sigma                 3.32747  RSS                564.675089
+R^2                   0.77743  F(7,51) =     25.45 [0.000]**
+log-likelihood       -150.349  DW                       1.69
+no. of observations        59  no. of parameters           8
+mean(DLEX)           0.546247  var(DLEX)             43.0011
+
+AR 1-4 test:      F(4,47)  =  0.38574 [0.8177]  
+ARCH 1-4 test:    F(4,43)  =  0.98972 [0.4234]  
+Normality test:   Chi^2(2) =   6.6808 [0.0354]* 
+hetero test:      F(6,44)  =   7.1768 [0.0000]**
+hetero-X test:    F(9,41)  =   4.6575 [0.0003]**
+RESET test:       F(1,50)  =0.0035284 [0.9529]  
+
+EQ(22) Modelling DLEX by RALS (using Blanch REG2 NOM.xls)
+       The estimation sample is: 1999 (3) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+DLEX_1             0.00661141    0.09654   0.0685   0.946   0.0001
+DPtheta16             12.5262      1.163     10.8   0.000   0.6989
+Ddiff               -0.224968     0.2380   -0.945   0.349   0.0176
+Constant             0.687809     0.4225     1.63   0.110   0.0503
+DBaa Spread          -2.18588      3.783   -0.578   0.566   0.0066
+DBaa Spread_1         2.75080      3.519    0.782   0.438   0.0121
+DFFED               -0.697234      3.242   -0.215   0.831   0.0009
+DFFED_1              -1.95022      3.194   -0.611   0.544   0.0074
+Uhat_1              -0.147321     0.1775   -0.830   0.411   0.0136
+
+sigma                 3.32256  RSS                551.971177
+no. of observations        59  no. of parameters           9
+mean(DLEX)           0.546247  var(DLEX)             43.0011
+
+NLS using analytical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Roots of error polynomial:
+         real         imag      modulus
+     -0.14732      0.00000      0.14732
+
+ARCH 1-4 test:    F(4,42)  =   1.3498 [0.2676]  
+Normality test:   Chi^2(2) =   4.4781 [0.1066]  
+hetero test:      F(6,44)  =   7.4040 [0.0000]**
+hetero-X test:    F(9,41)  =   4.9428 [0.0002]**
+Blanch REG2 NOM.xls saved to K:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\Blanch REG2 NOM.xls
+
