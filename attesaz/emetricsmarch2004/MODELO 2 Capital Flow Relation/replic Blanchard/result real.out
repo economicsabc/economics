@@ -1,0 +1,439 @@
+---- GiveWin 2.30 session started at 07:04:45 on Saturday 31 December 2005 ----
+
+Blanch REG2 NOM.xls loaded from C:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\replic Blanchard\Blanch REG2 NOM.xls
+
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-12-2005
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Logitjd package version 3.01, object created on 31-12-2005
+---- Logitjd 3.01 session started at  7:05:49 on 31-12-2005 ----
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+---- PcGive 10.40 session started at  7:05:54 on 31-12-2005 ----
+
+EQ( 1) Modelling DLEX by IVE (using Blanch REG2 NOM.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob
+Ddiff          Y      1.46523      1.468    0.998   0.323
+DPtheta16      Y      10.8561      2.848     3.81   0.000
+Constant              1.25174     0.6805     1.84   0.071
+
+sigma                 4.73046  RSS                1275.50241
+Reduced form sigma     6.3389
+no. of observations        60  no. of parameters           3
+no. endogenous variables    3  no. of instruments          5
+mean(DLEX)           0.604345  var(DLEX)             42.4836
+Additional instruments:
+[0] = DBaa Spread
+[1] = DFFED
+[2] = DFFED_1
+[3] = DBaa Spread_1
+
+Specification test: Chi^2(2) =  0.20147 [0.9042]  
+Testing beta = 0:   Chi^2(2) =   14.959 [0.0006]**
+
+AR 1-4 test:      F(4,53)  =  0.18466 [0.9454]  
+ARCH 1-4 test:    F(4,49)  =   15.840 [0.0000]**
+Normality test:   Chi^2(2) =   39.606 [0.0000]**
+hetero test:      F(4,52)  =   3.9918 [0.0067]**
+hetero-X test:    F(5,51)  =   3.4418 [0.0093]**
+
+Descriptive statistics of variables used in the model:
+Means
+         DLEX        Ddiff    DPtheta16     Constant  DBaa Spread        DFFED
+      0.60435     -0.18733    -0.034350       1.0000   -0.0040000    -0.060500
+      DFFED_1DBaa Spread_1
+    -0.061667   -0.0041667
+Standard deviations (using T-1)
+         DLEX        Ddiff    DPtheta16     Constant  DBaa Spread        DFFED
+       6.5729       2.1689      0.45982      0.00000      0.15495      0.20775
+      DFFED_1DBaa Spread_1
+      0.20749      0.15496
+Correlation matrix:
+                      DLEX        Ddiff    DPtheta16     Constant  DBaa Spread
+DLEX                1.0000    -0.082464      0.85695      0.00000      0.34117
+Ddiff            -0.082464       1.0000     -0.12017      0.00000    -0.036602
+DPtheta16          0.85695     -0.12017       1.0000      0.00000      0.46709
+Constant           0.00000      0.00000      0.00000      0.00000      0.00000
+DBaa Spread        0.34117    -0.036602      0.46709      0.00000       1.0000
+DFFED            -0.056948     -0.14167   -0.0058417      0.00000     0.081650
+DFFED_1          -0.055537     -0.17477     0.018271      0.00000      0.17302
+DBaa Spread_1      0.16477     0.062822      0.13612      0.00000      0.34236
+                     DFFED      DFFED_1DBaa Spread_1
+DLEX             -0.056948    -0.055537      0.16477
+Ddiff             -0.14167     -0.17477     0.062822
+DPtheta16       -0.0058417     0.018271      0.13612
+Constant           0.00000      0.00000      0.00000
+DBaa Spread       0.081650      0.17302      0.34236
+DFFED               1.0000      0.67596     -0.22757
+DFFED_1            0.67596       1.0000     0.081544
+DBaa Spread_1     -0.22757     0.081544       1.0000
+
+Covariance matrix of estimated parameters:
+                     Ddiff    DPtheta16     Constant
+Ddiff               2.1561      0.37654      0.41685
+DPtheta16          0.37654       8.1129      0.34921
+Constant           0.41685      0.34921      0.46304
+
+DLEX =  + 1.465*Ddiff + 10.86*DPtheta16 + 1.252
+(SE)     (1.47)        (2.85)            (0.68)
+
+
+Solved static long-run equation for DLEX
+                  Coefficient  Std.Error  t-value  t-prob
+Ddiff                 1.46523      1.468    0.998   0.323
+DPtheta16             10.8561      2.848     3.81   0.000
+Constant              1.25174     0.6805     1.84   0.071
+Long-run sigma = 4.73046
+
+ECM = DLEX - 1.46523*Ddiff - 10.8561*DPtheta16 - 1.25174;
+Covariance matrix of long-run parameters
+       2.1561      0.37654      0.41685
+      0.37654       8.1129      0.34921
+      0.41685      0.34921      0.46304
+WALD test: Chi^2(2) = 14.959 [0.0006] **
+
+EQ( 2) Modelling LEX by IVE (using Blanch REG2 NOM.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob
+diff           Y      3.52058     0.9738     3.62   0.001
+Ptheta16       Y      18.2545      4.238     4.31   0.000
+Constant             -16.0902      17.60   -0.914   0.364
+
+sigma                 25.8231  RSS                38009.3818
+Reduced form sigma     8.8831
+no. of observations        60  no. of parameters           3
+no. endogenous variables    3  no. of instruments          5
+mean(LEX)             85.9002  var(LEX)              592.656
+Additional instruments:
+[0] = FFED
+[1] = FFED_1
+[2] = Baa Spread
+[3] = Baa Spread_1
+
+Specification test: Chi^2(2) =   6.7695 [0.0339]* 
+Testing beta = 0:   Chi^2(2) =   40.386 [0.0000]**
+
+AR 1-4 test:      F(4,53)  =   25.043 [0.0000]**
+ARCH 1-4 test:    F(4,49)  =   119.03 [0.0000]**
+Normality test:   Chi^2(2) =   32.590 [0.0000]**
+hetero test:      F(4,52)  =   69.307 [0.0000]**
+hetero-X test:    F(5,51)  =   59.972 [0.0000]**
+
+Descriptive statistics of variables used in the model:
+Means
+          LEX         diff     Ptheta16     Constant         FFED       FFED_1
+       85.900       16.994       2.3096       1.0000       3.5172       3.5777
+   Baa Spread Baa Spread_1
+       2.6827       2.6867
+Standard deviations (using T-1)
+          LEX         diff     Ptheta16     Constant         FFED       FFED_1
+       24.550       6.0732      0.97919      0.00000       2.0724       2.0506
+   Baa Spread Baa Spread_1
+      0.45808      0.45599
+Correlation matrix:
+                       LEX         diff     Ptheta16     Constant         FFED
+LEX                 1.0000      0.30834      0.65027      0.00000     -0.87412
+diff               0.30834       1.0000      0.20838      0.00000     -0.48215
+Ptheta16           0.65027      0.20838       1.0000      0.00000     -0.40125
+Constant           0.00000      0.00000      0.00000      0.00000      0.00000
+FFED              -0.87412     -0.48215     -0.40125      0.00000       1.0000
+FFED_1            -0.86015     -0.49983     -0.38705      0.00000      0.99498
+Baa Spread         0.75914      0.12055      0.79661      0.00000     -0.55340
+Baa Spread_1       0.77783      0.23624      0.72963      0.00000     -0.62466
+                    FFED_1   Baa Spread Baa Spread_1
+LEX               -0.86015      0.75914      0.77783
+diff              -0.49983      0.12055      0.23624
+Ptheta16          -0.38705      0.79661      0.72963
+Constant           0.00000      0.00000      0.00000
+FFED               0.99498     -0.55340     -0.62466
+FFED_1              1.0000     -0.51150     -0.58049
+Baa Spread        -0.51150       1.0000      0.94254
+Baa Spread_1      -0.58049      0.94254       1.0000
+
+Covariance matrix of estimated parameters:
+                      diff     Ptheta16     Constant
+diff               0.94832     -0.90456      -14.027
+Ptheta16          -0.90456       17.963      -26.114
+Constant           -14.027      -26.114       309.80
+
+ LEX =  + 3.521*diff + 18.25*Ptheta16 - 16.09
+(SE)     (0.974)      (4.24)           (17.6)
+
+
+Solved static long-run equation for LEX
+                  Coefficient  Std.Error  t-value  t-prob
+diff                  3.52058     0.9738     3.62   0.001
+Ptheta16              18.2545      4.238     4.31   0.000
+Constant             -16.0902      17.60   -0.914   0.364
+Long-run sigma = 25.8231
+
+ECM = LEX - 3.52058*diff - 18.2545*Ptheta16 + 16.0902;
+Covariance matrix of long-run parameters
+      0.94832     -0.90456      -14.027
+     -0.90456       17.963      -26.114
+      -14.027      -26.114       309.80
+WALD test: Chi^2(2) = 40.3863 [0.0000] **
+
+
+//Batch code for the final specification:
+module("PcGive");
+package("PcGive");
+usedata("Blanch REG2 NOM.xls");
+system
+{
+    Y = LEX, diff, Ptheta16;
+    Z = Constant;
+    A = FFED, FFED_1, "Baa Spread", "Baa Spread_1";
+}
+estimate("IVE", 1999, 2, 2004, 1);
+Blanch REG2 REAL.xls loaded from C:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\replic Blanchard\Blanch REG2 REAL.xls
+
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+---- PcGive 10.40 session started at 10:35:48 on 31-12-2005 ----
+
+Algebra code for Blanch REG2 REAL.xls:
+"diff real" = "selic r"-"ffund r";
+
+
+EQ( 1) Modelling lrex by OLS-CS (using Blanch REG2 REAL.xls)
+       The estimation sample is: 1999 (2) to 2004 (1)
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+Constant              212.175      1.708     124.   0.000   0.9963
+diff real           0.0269815    0.09985    0.270   0.788   0.0013
+Ptheta16              6.14748     0.5192     11.8   0.000   0.7109
+
+sigma                 3.85991  RSS                849.236248
+R^2                  0.717206  F(2,57) =     72.28 [0.000]**
+log-likelihood       -164.636  DW                      0.148
+no. of observations        60  no. of parameters           3
+When the log-likelihood constant is NOT included:
+AIC                   2.74999  SC                    2.85471
+HQ                    2.79095  FPE                   15.6438
+When the log-likelihood constant is included:
+AIC                   5.58787  SC                    5.69259
+HQ                    5.62883  FPE                   267.188
+mean(lrex)            226.727  var(lrex)             50.0504
+
+Instability tests: 
+variance            0.85319**
+joint                5.4453**
+Individual instability tests:
+Constant             4.2890**
+diff real            3.6008**
+Ptheta16             3.4851**
+
+Normality test:   Chi^2(2) =   1.2151 [0.5447]  
+hetero test:      F(4,52)  =   8.2833 [0.0000]**
+hetero-X test:    F(5,51)  =   6.6791 [0.0001]**
+RESET test:       F(1,56)  = 0.030326 [0.8624]  
+
+lrex =  + 212.2 + 0.02698*diff real + 6.147*Ptheta16
+(SE)     (1.71)  (0.0998)            (0.519)        
+
+
+
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 31-12-2005
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.939318    0.04057     23.2   0.000
+Constant              216.670      2.840     76.3   0.000
+diff real           -0.109992    0.08423    -1.31   0.197
+Ptheta16              5.47749     0.3996     13.7   0.000
+
+log-likelihood    -105.492482
+no. of observations        60  no. of parameters           5
+AIC.T              220.984965  AIC                3.68308274
+mean(lrex)            226.727  var(lrex)             50.0504
+sigma                 1.37911  sigma^2               1.90195
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.88774       212.18     0.026981       6.1475
+
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.958508    0.04692     20.4   0.000
+Constant              217.877      5.288     41.2   0.000
+diff real           -0.100071    0.08980    -1.11   0.270
+Ptheta16              5.49003     0.3981     13.8   0.000
+
+log-likelihood    -104.295922
+no. of observations        60  no. of parameters           5
+AIC.T              218.591845  AIC                3.64319741
+mean(lrex)            226.727  var(lrex)             50.0504
+sigma                 1.41195  sigma^2               1.99361
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.88774       212.18     0.026981       6.1475
+
+Results saved to C:\TESES MESTRADO\emetricsmarch2004\MODELO 2 Capital Flow Relation\replic Blanchard\result real.out
+  
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (3) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.967514    0.03144     30.8   0.000
+Constant              215.661      3.684     58.5   0.000
+diff real          -0.0756474    0.07461    -1.01   0.315
+Ptheta16              5.26886     0.3503     15.0   0.000
+
+log-likelihood    -96.0955479
+no. of observations        59  no. of parameters           5
+AIC.T              202.191096  AIC                3.42696773
+mean(lrex)            226.722  var(lrex)             50.8975
+sigma                 1.20502  sigma^2               1.45207
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.86275       211.78     0.062659       6.1383
+
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (3) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                  1.00000 1.108e-0059.022e+004   0.000
+Constant             -93733.2      5499.    -17.0   0.000
+diff real          -0.0406848    0.07358   -0.553   0.583
+Ptheta16              5.29974     0.3387     15.6   0.000
+
+log-likelihood    -93.5193043
+no. of observations        59  no. of parameters           5
+AIC.T              197.038609  AIC                3.33963743
+mean(lrex)            226.722  var(lrex)             50.8975
+sigma                 1.21195  sigma^2               1.46881
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Weak convergence (no improvement in line search)
+Used starting values:
+      0.86275       211.78     0.062659       6.1383
+
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (6) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.959596    0.03679     26.1   0.000
+Constant              214.950      3.377     63.6   0.000
+diff real           0.0150611     0.1340    0.112   0.911
+Ptheta16              5.28504     0.3562     14.8   0.000
+
+log-likelihood    -91.5507018
+no. of observations        56  no. of parameters           5
+AIC.T              193.101404  AIC                3.44823935
+mean(lrex)             227.17  var(lrex)             49.6458
+sigma                 1.21319  sigma^2               1.47183
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.78215       206.09      0.68821       5.5073
+
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (6) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                  1.00000 1.186e-0058.434e+004   0.000
+Constant             -75968.0      8218.    -9.24   0.000
+diff real          0.00781917     0.1298   0.0602   0.952
+Ptheta16              5.31486     0.3450     15.4   0.000
+
+log-likelihood    -89.3401868
+no. of observations        56  no. of parameters           5
+AIC.T              188.680374  AIC                3.36929239
+mean(lrex)             227.17  var(lrex)             49.6458
+sigma                 1.22624  sigma^2               1.50366
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Weak convergence (no improvement in line search)
+Used starting values:
+      0.78215       206.09      0.68821       5.5073
+
+
+---- Maximum likelihood estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  2000 (1) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.949126    0.04256     22.3   0.000
+Constant              215.394      3.204     67.2   0.000
+diff real           0.0392934     0.1596    0.246   0.807
+Ptheta16              5.29219     0.3608     14.7   0.000
+
+log-likelihood    -79.9571874
+no. of observations        49  no. of parameters           5
+AIC.T              169.914375  AIC                 3.4676403
+mean(lrex)             227.97  var(lrex)             51.2109
+sigma                 1.20836  sigma^2               1.46012
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.80183       206.52      0.67816       5.4852
+
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  2000 (1) - 2004 (1)
+The dependent variable is: lrex  (Blanch REG2 REAL.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                  1.00000 1.286e-0057.774e+004   0.000
+Constant             -70605.5      6568.    -10.8   0.000
+diff real           0.0189315     0.1557    0.122   0.904
+Ptheta16              5.30308     0.3505     15.1   0.000
+
+log-likelihood     -78.192236
+no. of observations        49  no. of parameters           5
+AIC.T              166.384472  AIC                3.39560147
+mean(lrex)             227.97  var(lrex)             51.2109
+sigma                 1.23172  sigma^2               1.51713
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.80183       206.52      0.67816       5.4852
+
+
+
+//Batch code for the final specification:
+module("PcGive");
+package("ARFIMA");
+usedata("Blanch REG2 REAL.xls");
+system
+{
+    Y = lrex;
+    X = Constant, "diff real", Ptheta16;
+}
+ARMA(1,0);
+estimate("NLS", 2000, 1, 2004, 1);
