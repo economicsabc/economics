@@ -1,0 +1,286 @@
+AZ REG1.xls loaded from K:\TESES MESTRADO\emetricsmarch2004\MODELO 1  Default X Risk Aversion\Extensão de prazo e INPUT NOVO\AZ REG1.xls
+
+
+Ox version 3.40 (Windows) (C) J.A. Doornik, 1994-2004
+Arfima package version 1.02, object created on 27-12-2005
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1995 (7) - 2004 (1)
+The dependent variable is: LEMBI+ BZ JPM2  (AZ REG1.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.914481    0.03967     23.1   0.000
+Constant             -3.51558     0.1539    -22.8   0.000
+BB HY Spd JPM        0.226467    0.02974     7.62   0.000
+
+log-likelihood     95.6829319
+no. of observations       103  no. of parameters           4
+AIC.T             -183.365864  AIC               -1.78025111
+mean(LEMBI+ BZ JPM2)     -2.66166  var(LEMBI+ BZ JPM2)     0.128094
+sigma               0.0965113  sigma^2            0.00931444
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.88758      -3.4254      0.22741
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 36:
+      0.14832    -0.066920    -0.026690     0.037229    0.0028659     0.068616
+     0.058983     0.032604   -0.0022899    -0.011967    -0.077868     0.011713
+     0.081118     0.048371    -0.081323    -0.094164     -0.22122     -0.13419
+     -0.12879      0.10747     0.013221     -0.12301     -0.10828     -0.11763
+    -0.079196     0.061683     0.013458     -0.10651     0.030222     0.059959
+     -0.13639    -0.064702     0.065106      0.16786     0.034214   -0.0022251
+Partial autocorrelation function (PACF):
+      0.14832    -0.090919   -0.0024508     0.036960    -0.011899     0.077975
+     0.037807     0.027305  -0.00061814    -0.011457    -0.079221     0.029168
+     0.059017     0.021966    -0.080176    -0.067562     -0.21457    -0.092296
+     -0.14969      0.12282    -0.023656    -0.099028    -0.035918     -0.10658
+    -0.036581     0.061758    -0.022174     -0.11239     0.095696     0.055859
+     -0.10771    -0.028850    -0.013253     0.075815    -0.015946    -0.032463
+Portmanteau(36):  Chi^2(35)=   37.125 [0.3713]  
+
+Normality test for residuals
+Observations             103
+Mean             2.3588e-006
+Std.Devn.           0.095570
+Skewness              1.3193
+Excess Kurtosis       3.4479
+Minimum             -0.21622
+Maximum              0.42269
+Asymptotic test:  Chi^2(2) =   80.899 [0.0000]**
+Normality test:   Chi^2(2) =   22.537 [0.0000]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.07858     0.1006
+RSS = 0.0464391  sigma = 0.0217685
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,98)  =  0.60999 [0.4367]  
+
+
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2004 (1)
+The dependent variable is: LEMBI+ BZ JPM2  (AZ REG1.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.883167    0.05044     17.5   0.000
+Constant             -3.53256     0.1482    -23.8   0.000
+BB HY Spd JPM        0.210901    0.02992     7.05   0.000
+
+log-likelihood     67.8708121
+no. of observations        60  no. of parameters           4
+AIC.T             -127.741624  AIC               -2.12902707
+mean(LEMBI+ BZ JPM2)     -2.53865  var(LEMBI+ BZ JPM2)    0.0879649
+sigma               0.0794071  sigma^2            0.00630548
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.83000      -3.3719      0.20566
+
+
+	  
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1995 (7) - 2002 (2)
+The dependent variable is: LEMBI+ BZ JPM2  (AZ REG1.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.908055    0.04385     20.7   0.000
+Constant             -3.43631     0.1806    -19.0   0.000
+BB HY Spd JPM        0.209839    0.03920     5.35   0.000
+
+log-likelihood     72.7898343
+no. of observations        80  no. of parameters           4
+AIC.T             -137.579669  AIC               -1.71974586
+mean(LEMBI+ BZ JPM2)     -2.72248  var(LEMBI+ BZ JPM2)    0.0991292
+sigma               0.0986524  sigma^2             0.0097323
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.89612      -3.3709      0.21677
+
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1999 (2) - 2002 (2)
+The dependent variable is: LEMBI+ BZ JPM2  (AZ REG1.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.827328    0.05884     14.1   0.000
+Constant             -3.19849     0.1738    -18.4   0.000
+BB HY Spd JPM        0.136119    0.03779     3.60   0.001
+
+log-likelihood     48.1901271
+no. of observations        37  no. of parameters           4
+AIC.T             -88.3802542  AIC               -2.38865552
+mean(LEMBI+ BZ JPM2)     -2.59368  var(LEMBI+ BZ JPM2)    0.0283093
+sigma               0.0676377  sigma^2            0.00457486
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.79913      -2.6366     0.011642
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 36:
+     0.059702    -0.010596     0.030463     -0.18129     -0.15620    -0.023104
+   -0.0036416    -0.066925    -0.032974    -0.066011      0.10454    -0.079494
+     -0.18596      0.12539     0.034281     -0.12057    -0.093275    -0.027309
+     -0.16838     0.042202     0.090600     0.046758     0.069384     0.086960
+     0.023963      0.19269    -0.019770    0.0057803    -0.012058     -0.13925
+    -0.044536    -0.016979    0.0074767     0.039737    -0.011602  9.5027e-007
+Partial autocorrelation function (PACF):
+     0.059702    -0.014211     0.032073     -0.18613     -0.13729    -0.014797
+    0.0075706    -0.094515    -0.083247    -0.099915      0.11722     -0.12714
+     -0.24067     0.089151     0.054690     -0.16032     -0.26497    -0.081293
+     -0.12374    -0.024698     -0.12067     -0.12197    -0.032686     0.067766
+     -0.15978     0.095361   -0.0041171     0.044862     -0.16191     -0.15080
+    -0.012059    -0.045712    -0.036354    -0.063635     -0.16362    -0.015726
+Portmanteau(36):  Chi^2(35)=   22.988 [0.9408]  
+
+Normality test for residuals
+Observations              37
+Mean             3.3228e-006
+Std.Devn.           0.065784
+Skewness            -0.41711
+Excess Kurtosis     -0.10383
+Minimum             -0.17476
+Maximum              0.10299
+Asymptotic test:  Chi^2(2) =   1.0895 [0.5800]  
+Normality test:   Chi^2(2) =   1.3472 [0.5099]  
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.16231     0.1735
+RSS = 0.00126013  sigma = 0.00627526
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,32)  =  0.87559 [0.3564]  
+
+Algebra code for AZ REG1.xls:
+"BBB-BB HY Spd JPM" = "BB HY Spd JPM"-"BBB HY Spd JPM";
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1995 (7) - 2004 (1)
+The dependent variable is: LEMBI+ BZ JPM2  (AZ REG1.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.955669    0.03193     29.9   0.000
+Constant             -2.97164     0.2921    -10.2   0.000
+BBB-BB HY Spd JPM     0.177882    0.05640     3.15   0.002
+
+log-likelihood      77.925655
+no. of observations       103  no. of parameters           4
+AIC.T              -147.85131  AIC               -1.43544961
+mean(LEMBI+ BZ JPM2)     -2.66166  var(LEMBI+ BZ JPM2)     0.128094
+sigma                 0.11467  sigma^2             0.0131493
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.93154      -2.7539      0.13279
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 36:
+      0.36875     0.079389     0.027951     0.080670    -0.053043    -0.066791
+   -0.0048893     0.021223     0.014894     0.035476   -0.0049816   -0.0012363
+     0.058772     0.080589     -0.12003     -0.13570     -0.17515     -0.19594
+     -0.14797     0.022479     0.070342   0.00073729    -0.064250    -0.078055
+    -0.069476     0.047500    0.0095812    -0.079981    -0.090567   0.00066664
+    -0.077593     -0.11039     0.056456      0.12101     0.024881    -0.026874
+Partial autocorrelation function (PACF):
+      0.36875    -0.065491     0.024304     0.077504     -0.12972   -0.0020474
+     0.032038   0.00035924     0.023275     0.029897    -0.048936     0.017916
+     0.069767     0.032258     -0.18457    -0.027449     -0.14805     -0.11603
+     0.016246     0.089695     0.027711    -0.042637    -0.083897    -0.080763
+   -0.0035211      0.13917    -0.045936    -0.091412    -0.024752   0.00084967
+    -0.072578    -0.023162      0.10263    -0.040128    -0.068497    -0.017701
+Portmanteau(36):  Chi^2(35)=   43.892 [0.1440]  
+
+Normality test for residuals
+Observations             103
+Mean            -8.5938e-007
+Std.Devn.            0.11355
+Skewness              1.1400
+Excess Kurtosis       1.8201
+Minimum             -0.26818
+Maximum              0.39246
+Asymptotic test:  Chi^2(2) =   36.526 [0.0000]**
+Normality test:   Chi^2(2) =   22.341 [0.0000]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1     0.23445    0.09807
+RSS = 0.0616525  sigma = 0.025082
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,98)  =   5.7149 [0.0187]* 
+
+---- Non-linear least squares estimation of ARFIMA(1,0,0) model ----
+The estimation sample is:  1995 (7) - 2004 (1)
+The dependent variable is: LEMBI+ BZ JPM2  (AZ REG1.xls)
+
+                  Coefficient  Std.Error  t-value  t-prob
+AR-1                 0.912316    0.03946     23.1   0.000
+Constant             -3.55592     0.1551    -22.9   0.000
+BBB-BB HY Spd JPM     0.178652    0.04771     3.74   0.000
+BBB HY Spd JPM       0.255561    0.03715     6.88   0.000
+
+log-likelihood     96.4884411
+no. of observations       103  no. of parameters           5
+AIC.T             -182.976882  AIC               -1.77647458
+mean(LEMBI+ BZ JPM2)     -2.66166  var(LEMBI+ BZ JPM2)     0.128094
+sigma               0.0962371  sigma^2            0.00926158
+
+BFGS using numerical derivatives (eps1=0.0001; eps2=0.005):
+Strong convergence
+Used starting values:
+      0.88686      -3.3887      0.13212      0.23846
+
+
+Portmanteau statistic for residuals
+Autocorrelation function (ACF) from lag 1 to 36:
+      0.13118     -0.10497    -0.034875     0.024296    0.0094061     0.062155
+     0.085752     0.022048     0.024021    -0.013464    -0.078903     0.015263
+     0.086630     0.021659    -0.096452    -0.069924     -0.19937     -0.13087
+     -0.12282      0.11817 -8.4814e-005     -0.14999     -0.11843     -0.12771
+    -0.070233     0.076571     0.030965     -0.13173     0.062920     0.055337
+     -0.15572    -0.064758     0.068992      0.16674     0.037806     0.023296
+Partial autocorrelation function (PACF):
+      0.13118     -0.12431   -0.0031886     0.017409   -0.0013441     0.067762
+     0.071364     0.014002     0.040941    -0.019010    -0.074271     0.031122
+     0.053599   -0.0042044    -0.087947    -0.046820     -0.21069    -0.096508
+     -0.16527      0.12132    -0.058086     -0.11562    -0.058536     -0.10976
+    -0.047068     0.082303   -0.0058381     -0.12168      0.14385     0.030350
+     -0.10847    -0.029899    -0.018132     0.089591    0.0062354    -0.014914
+Portmanteau(36):  Chi^2(35)=   40.240 [0.2494]  
+
+Normality test for residuals
+Observations             103
+Mean            -4.8689e-008
+Std.Devn.           0.094825
+Skewness              1.3633
+Excess Kurtosis       3.6845
+Minimum             -0.20633
+Maximum              0.43018
+Asymptotic test:  Chi^2(2) =   90.171 [0.0000]**
+Normality test:   Chi^2(2) =   23.679 [0.0000]**
+
+ARCH coefficients:
+  Lag Coefficient  Std.Error
+    1    0.066521     0.1012
+RSS = 0.0470489  sigma = 0.0220236
+
+Testing for error ARCH from lags 1 to 1
+ARCH 1-1 test:    F(1,97)  =  0.43189 [0.5126]  
+
+
+AZ REG1.xls saved to K:\TESES MESTRADO\emetricsmarch2004\MODELO 1  Default X Risk Aversion\Extensão de prazo e INPUT NOVO\AZ REG1.xls
+
